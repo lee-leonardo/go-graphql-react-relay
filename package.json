@@ -4,6 +4,7 @@
   "description": "graphql, react, relay",
   "main": "index.js",
   "dependencies": {
+    "enzyme": "^3.3.0",
     "jest": "^23.1.0",
     "react": "^16.4.0",
     "redux": "^4.0.0",
