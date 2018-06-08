@@ -10,17 +10,11 @@ module.exports = {
         publicPath: '/dist/'
     },
     resolve: {
-        modules: [
-                path.resolve(ROOT, 'less'),
-                path.resolve(ROOT, 'react'),
-                'node_modules'
-            ],
-            extensions: [ '.js', '.jsx', '.ts', '.tsx' ]
-        ]
+        extensions: [".ts", ".tsx", ".js"]
     },
     module: {
         rules: [
-            { test: /\.tsx?$/, use: [{ loader: 'ts-loader', options: { transpileOnly: true } }] }
+            { test: /\.tsx?$/, loader: "ts-loader" }
         ]
     }
 }
